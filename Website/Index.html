@@ -4,13 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>Document</title>
 </head>
 <body>
 
     <header></header>
     <main>
-        <p>Her er en test</p>
+        <h1>Guide til brugen af Git og GitHub</h1>
+        <p>Hvis du vil adde en eller flere filer i din mappe, skal du ligge dem derind og derefter hoppe over i terminalen</p>
+        <p>1. Skriv: <span>git status</span></p>
+        <p>Du får skrevet noget lignende: On branch main
+            Your branch is up to date with 'origin/main'.
+            
+            Untracked files:
+              (use "git add <file>..." to include in what will be committed)
+                    daily_life_w1.jpeg</p>
+        <p>Her vil jeg adde et billede "daily_life_w1.jpeg". Læg mærke til, at filen er rød (endnu ikke pushed)</p>
+        <br><p>2. Skriv nu: <span>git add .</span></p>
+        <p>Her mødes du ikke af nogen besked - du har altså gjort det rigtigt</p>
+        <br><p>3. Skriv: git commit -m "din commit message"</p>
+        <p>Jeg skrev for eksempel: git commit -m "added an image"</p>
+        <p>beskeden lyder nu: [main 3463c9d] added an image
+            1 file changed, 0 insertions(+), 0 deletions(-)
+            create mode 100644 daily_life_w1.jpeg</p>
+        <br><p>4. Skriv nu: <span>git push</span></p>
+        <p>Herefter får du en lang besked lignende: Enumerating objects: 4, done.
+            Counting objects: 100% (4/4), done.
+            Delta compression using up to 8 threads
+            Compressing objects: 100% (3/3), done.
+            Writing objects: 100% (3/3), 85.77 KiB | 17.15 MiB/s, done.
+            Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+            To https://github.com/rgtimmermann/Javascript-Assignments.git
+               05152a1..3463c9d  main -> main</p>
+        <p>Den giver dig tilmed et link til din GitHub</p>
     </main>
     <footer></footer>
     
