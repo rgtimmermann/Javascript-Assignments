@@ -11,9 +11,11 @@ p{
 h1{
     color:white;
     padding-top:40px;
+    
 }
 h2{
-    color:white;
+    color:green;
+    padding:20px 0 3px 0;
 }
 span{
     color:green;
